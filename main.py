@@ -12,4 +12,4 @@ def get_user(user_id: int):
             detail="User not found"
         )
 
-    return user["email"]
+    return user.get('email')
