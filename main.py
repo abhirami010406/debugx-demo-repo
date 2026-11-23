@@ -24,8 +24,8 @@ def get_user(user_id: int):
         )
 
     user = {
-        "name": "Alice"
+        "name": "Alice",
+        "email": "alice@example.com"  # Added email key
     }
 
-    # Intentional error for DebugX testing
-    return user.get('email')
+    return user.get('email', 'Email not found')
